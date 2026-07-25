@@ -1,122 +1,69 @@
 /*
- * AES Encrypt / Decrypt Utility
- * Uses CryptoJS AES
- *
- * Requires:
- * js/aes.js
- */
+ AES Encrypt / Decrypt
+ Uses CryptoJS 4.2.0
+*/
 
 
-// ===============================
-// AES Encrypt
-// ===============================
+function encryptAES() {
 
-function cryptAES(value, secret) {
+    let text = document.getElementById("encryptText").value;
+    let password = document.getElementById("encryptPassword").value;
 
-    var encrypted = CryptoJS.AES.encrypt(
-        value,
-        secret
-    );
-
-    return encrypted.toString();
-}
-
-
-// ===============================
-// AES Decrypt
-// ===============================
-
-function decryptAES(encryptedValue, secret) {
-
-    var decrypted = CryptoJS.AES.decrypt(
-        encryptedValue,
-        secret
-    );
-
-    return decrypted.toString(
-        CryptoJS.enc.Utf8
-    );
-}
-
-
-// ===============================
-// Encrypt Button Handler
-// ===============================
-
-function startEncryptAES() {
-
-    var value = document.getElementById("value").value;
-    var password = document.getElementById("secret").value;
-
-    var output = document.getElementById("encrypted");
-
-    try {
-
-        output.value = cryptAES(
-            value,
-            password
-        );
-
-    } catch (e) {
-
-        output.value = "Encryption error";
-
+    if (!text || !password) {
+        alert("Enter text and password");
+        return;
     }
+
+
+    let encrypted = CryptoJS.AES.encrypt(
+        text,
+        password
+    ).toString();
+
+
+    document.getElementById("encryptedOutput").value = encrypted;
 }
 
 
-// ===============================
-// Decrypt Button Handler
-// ===============================
 
-function startDecryptAES() {
+function decryptAES() {
 
-    var encrypted = document.getElementById("encryptedValue").value;
-    var password = document.getElementById("decryptSecret").value;
+    let encrypted = document.getElementById("decryptText").value;
+    let password = document.getElementById("decryptPassword").value;
 
-    var output = document.getElementById("decrypted");
+
+    if (!encrypted || !password) {
+        alert("Enter encrypted text and password");
+        return;
+    }
+
 
     try {
 
-        var result = decryptAES(
+        let decrypted = CryptoJS.AES.decrypt(
             encrypted,
             password
         );
 
-        if (result.length === 0) {
-            output.value = "Invalid password or encrypted text";
-        }
-        else {
-            output.value = result;
+
+        let result = decrypted.toString(
+            CryptoJS.enc.Utf8
+        );
+
+
+        if (!result) {
+            result = "Invalid password or encrypted text";
         }
 
-    } catch (e) {
 
-        output.value = "Invalid encrypted text";
+        document.getElementById("decryptedOutput").value = result;
+
+
+    } catch(e) {
+
+        document.getElementById("decryptedOutput").value =
+            "Decryption failed";
 
     }
-}
 
-
-// ===============================
-// Utility Functions
-// ===============================
-
-function clearField(id) {
-
-    document.getElementById(id).value = "";
-
-}
-
-
-function copyField(id) {
-
-    var field = document.getElementById(id);
-
-    field.select();
-    field.setSelectionRange(0, 99999);
-
-    navigator.clipboard.writeText(
-        field.value
-    );
 }
