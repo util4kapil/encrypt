@@ -7,53 +7,134 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- CryptoJS CDN -->
+    <!-- CryptoJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 
 </head>
 
 <body>
 
-<h2>AES Encrypt</h2>
+<div class="container">
 
-<label>Text</label><br>
-<textarea id="encryptText" rows="5" cols="60"></textarea>
-<br><br>
+    <h1>🔐 AES Encrypt / Decrypt</h1>
 
-<label>Password</label><br>
-<input id="encryptPassword" type="password">
-<br><br>
-
-<button onclick="encryptAES()">Encrypt</button>
-
-<br><br>
-
-<label>Encrypted Output</label><br>
-<textarea id="encryptedOutput" rows="5" cols="60"></textarea>
+    <p class="subtitle">
+        Secure client-side encryption using AES
+    </p>
 
 
-<hr>
+    <div class="grid">
 
 
-<h2>AES Decrypt</h2>
+        <!-- Encrypt Card -->
 
-<label>Encrypted Text</label><br>
-<textarea id="decryptText" rows="5" cols="60"></textarea>
-<br><br>
+        <div class="card">
 
-<label>Password</label><br>
-<input id="decryptPassword" type="password">
-<br><br>
+            <h2>Encrypt</h2>
 
-<button onclick="decryptAES()">Decrypt</button>
+            <label>Message</label>
 
-<br><br>
+            <textarea 
+                id="encryptText"
+                placeholder="Enter text to encrypt..."
+            ></textarea>
 
-<label>Decrypted Output</label><br>
-<textarea id="decryptedOutput" rows="5" cols="60"></textarea>
+
+            <label>Password</label>
+
+            <input 
+                id="encryptPassword"
+                type="password"
+                placeholder="Enter password"
+            >
+
+
+            <button onclick="encryptAES()">
+                Encrypt
+            </button>
+
+
+            <label>Encrypted Output</label>
+
+            <textarea
+                id="encryptedOutput"
+                class="output"
+                readonly
+            ></textarea>
+
+
+            <button class="secondary"
+                    onclick="copyField('encryptedOutput')">
+                Copy
+            </button>
+
+
+        </div>
+
+
+
+
+        <!-- Decrypt Card -->
+
+        <div class="card">
+
+            <h2>Decrypt</h2>
+
+
+            <label>Encrypted Text</label>
+
+            <textarea 
+                id="decryptText"
+                placeholder="Paste encrypted text..."
+            ></textarea>
+
+
+            <label>Password</label>
+
+            <input 
+                id="decryptPassword"
+                type="password"
+                placeholder="Enter password"
+            >
+
+
+            <button onclick="decryptAES()">
+                Decrypt
+            </button>
+
+
+            <label>Decrypted Output</label>
+
+            <textarea
+                id="decryptedOutput"
+                class="output"
+                readonly
+            ></textarea>
+
+
+            <button class="secondary"
+                    onclick="copyField('decryptedOutput')">
+                Copy
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        AES encryption runs locally in your browser.
+        No data is sent to any server.
+    </footer>
+
+
+</div>
 
 
 <script src="js/crypt.js"></script>
+
 
 </body>
 
