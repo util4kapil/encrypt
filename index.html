@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)http://myeasywww.appspot.com/utility/free/online/Crypt_Decrypt-MD5-AES-HMAC-SHA-DES-RABBIT/en?command=UTILITY&ID=2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Crypt and Decrypt online tool conversion  : MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Crypt and Decrypt free online tool conversion  : MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT">
+<meta name="keywords" content="free, online,tool, MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT">
+<!-- #EndEditable --> 
+
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<meta name="revisit-after" content="3 days">
+<script type="text/javascript" async="" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/ga.js"></script><script src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/plusone.js" gapi_processed="true"></script>
+<!--styles -->
+
+<link href="http://myeasywww.appspot.com/bootstrap22/css/bootstrap.css" rel="stylesheet">
+<link href="http://myeasywww.appspot.com/bootstrap22/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="http://myeasywww.appspot.com/bootstrap22/csscommon/prettify.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+ 
+
+
+<script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/crypt.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/md5.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/sha1.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/sha256.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/sha512.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/hmac-md5.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/hmac-sha1.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/hmac-sha256.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/hmac-sha512.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/aes.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/tripledes.js"></script><script type="text/javascript" src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/rabbit.js"></script>
+<script type="text/javascript">
+<!--
+
+var submenu=new Array();
+submenu[0]="sub_utility_1";
+//submenu[1]="sub_learn_1";
+
+function hideAllSubMenu(){
+  for (i=0;i<submenu.length;i++){
+    var divtmp=document.getElementById(submenu[i]);
+    divtmp.style.display="none";
+	//alert(divtmp.id);
+  }
+  // alert('end hideAllSubMenu');
+}
+function showSubMenu(id){
+try{
+	//alert("show sub");
+ var div=document.getElementById(id);
+	//alert("show sub2");
+ for (i=0;i<submenu.length;i++){
+  var divtmp=document.getElementById(submenu[i]);
+  if(divtmp.id!==div.id){
+    divtmp.style.display="none";
+  }
+ }
+	//alert("show sub end");
+ div.style.display="";
+// alert('end showSubMenu');
+ }catch(e){/*alert(e);*/}
+}
+
+function addParameterToURL(param){
+    _url = location.href;
+    _url += (_url.split('?')[1] ? '&':'?') + param;
+    return _url;
+}
+ 
+ 
+var addUrlParam = function(search, key, val){
+  var newParam = key + '=' + val,
+      params = '?' + newParam;
+  var done=false;   
+ 
+  // If the "search" string exists, then build params from it
+  if (search) {
+    // Try to replace an existance instance
+	reg1=new RegExp('&' + key + '[^&]*');
+	params=search;
+	//halert('test' +params);
+	if(reg1.test(params)){
+	    done=true;
+		params = search.replace(reg1, "&"+RegExp.$1 + newParam);
+	}
+	reg2=new RegExp('[\?]' + key + '[^&]*');
+	if(reg2.test(params)){
+	    done=true;
+		params = search.replace(reg2, "?"+RegExp.$1 + newParam);
+	}
+	 
+    // If nothing was replaced, then add the new param to the end
+    if (!done) {
+
+	  if(params.indexOf('?')<0) {
+		params += '?'; 
+      }else{
+		 
+	     params += '&';
+		 
+	  }
+	  params += newParam;
+    }
+  }
+  return params;
+};
+
+
+function opensite(url,name){
+ 
+window.open(url,name );
+//open new window
+//window.open(url);
+//alert(name+url);
+//style='height='+self.height+',width='+self.width;
+//window.open(url,name,style );
+ 
+
+}
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+
+function setLanguagecreateCookie(lang){
+var ref=window.location.href;
+ref=ref.replace("#","");
+purl=addUrlParam(ref,"LANG",lang);
+window.location=purl;
+//
+
+	//createCookie('LANG',lang,360000);
+	//window.location.reload();
+	//alert('reload');
+}
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/main.css" type="text/css">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22356370-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+       
+ 
+
+
+
+
+  
+</head>
+<body data-twttr-rendered="true">
+
+<div id="divmain" class="container-fluid">
+<CENTER><h1>ENCRYPTOR/DECRYPTOR</h1></CENTER>
+</div>
+<div class="row-fluid">
+
+<div class="span12">
+
+       
+
+
+<br><br>
+<div class="well">
+<center><b>Crypt using  algorithms MD5, SHA1, SHA256</b></center>
+<table>
+<tbody><tr><td>Insert the value to Convert:</td><td class="span8"><textarea class="span8" id="value" rows="4" placehoolder="insert the text to convert"></textarea></td></tr><tr>
+</tr><tr><td>MD5 result:</td><td class="span8"><input class="span8" id="MD5" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td>SHA1 result:</td><td class="span8"><input class="span8" id="SHA1" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td>SHA256 result:</td><td class="span8"><input class="span8" id="SHA256" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td><input class="btn  btn-primary" type="button" value="Exceute!" onclick="startEncrypt()"></td></tr><tr>
+
+</tr></tbody></table>
+</div>
+<br><br>
+
+<div class="well">
+<center><b>Crypt using  algorithms AES, HMAC, RABBIt</b></center>
+<table>
+<tbody><tr><td>Insert the value to Convert:</td><td class="span8"><textarea class="span8" id="pvalue" rows="4">insert the text to convert</textarea></td></tr><tr>
+</tr><tr><td>Insert the Secret Passphrase:</td><td class="span8"><input class="span8" type="text" value="" id="psecret" size="75"></td></tr><tr>
+</tr><tr><td>AES result:</td><td class="span8"><input class="span8" id="AES" type="text" value="" size="75"></td></tr><tr>
+<!--<tr><td></td><td ><input id="AES_ORIG" type="text" value="" size="75"></td><tr>
+-->
+</tr><tr><td>RABBIT result:</td><td class="span8"><input class="span8" id="RABBIT" type="text" value="" size="75"></td></tr><tr>
+<!--
+  <tr><td></td><td ><input id="RABBIT_ORIG" type="text" value="" size="75"></td><tr>
+-->
+
+</tr><tr><td>HMAC_MD5 result</td><td class="span8"><input class="span8" id="HMAC_MD5" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td>HMAC_SHA1 result</td><td class="span8"><input class="span8" id="HMAC_SHA1" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td>HMAC_SHA256 result</td><td class="span8"><input class="span8" id="HMAC_SHA256" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td>HMAC_SHA512 result</td><td class="span8"><input class="span8" id="HMAC_SHA512" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td><input class="btn  btn-primary" type="button" value="Execute!" onclick="startEncryptSec()"></td></tr><tr>
+</tr></tbody></table>
+ </div>
+<br><br>
+<div class="well">
+<center><b>Decrypt string using  algorithms  AES, HMAC, RABBIt</b></center>
+<table>
+<tbody><tr><td>Crypted text to decript:</td><td class="span8"><textarea class="span8" id="revvalue" rows="4" cols="75">insert the text to convert</textarea></td></tr><tr>
+</tr><tr><td>Insert the Secret Passphrase:</td><td class="span8"><input class="span8" type="text" value="" id="revsecret" size="75"></td></tr><tr>
+</tr><tr><td>Decrypted AES value:</td><td class="span8"><input class="span8" id="REVERSEAES" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td>Decrypted RABBIT value:</td><td class="span8"><input class="span8" id="REVERSERABBIT" type="text" value="" size="75"></td></tr><tr>
+</tr><tr><td><input class="btn  btn-primary" type="button" value="Exceute decrypt AES" onclick="startDecryptAESSec()"></td>
+   <td> <input class="btn  btn-primary" type="button" value="Exceute decrypt RABBIT" onclick="startDecryptRabbitSec()"></td>
+ </tr><tr>
+</tr></tbody></table>
+</div>
+<br><br>
+<div class="well">
+<center><b>DES</b></center>
+<table>
+<tbody><tr><td>Insert the Secret Passphrase:</td><td class="span8"><input class="span8" type="text" value="" id="despwd" size="75"></td></tr><tr>
+</tr><tr><td>String to convert:</td><td class="span8"><textarea id="cryptdes" rows="4" class="span8">insert the text to convert</textarea></td></tr><tr>
+</tr><tr><td>Result:</td><td class="span8"><textarea id="resultdes" rows="4" class="span8">insert the text to convert</textarea></td></tr><tr>
+</tr><tr><td><p><button class="btn  btn-primary" type="button" onclick="cryptdes(&#39;despwd&#39;,&#39;cryptdes&#39;,&#39;resultdes&#39;)">DES CRYPT</button>&nbsp;
+<button class="btn  btn-primary" type="button" onclick="decryptdes(&#39;despwd&#39;,&#39;cryptdes&#39;,&#39;resultdes&#39;)">DES DECRYPT</button>
+</p></td></tr><tr>
+</tr></tbody></table> 
+</div>
+<br><br>
+<div class="well">
+<center><b>TRIPLE DES</b></center>
+<table>
+<tbody><tr><td>Insert the Secret Passphrase:</td><td class="span8"><input class="span8" type="text" value="" id="des3pwd" size="75"></td></tr><tr>
+</tr><tr><td>String to convert:</td><td class="span8"><textarea id="crypt3des" rows="4" class="span8"></textarea></td></tr><tr>
+</tr><tr><td>Result:</td><td class="span8"><textarea id="result3des" rows="4" class="span8"></textarea></td></tr>
+<tr><td><button class="btn  btn-primary" type="button" onclick="crypt3des(&#39;des3pwd&#39;,&#39;crypt3des&#39;,&#39;result3des&#39;)">TRIPLEDES CRYPT</button>&nbsp;
+<button class="btn  btn-primary" type="button" onclick="decrypt3des(&#39;des3pwd&#39;,&#39;crypt3des&#39;,&#39;result3des&#39;)">TRIPLEDES DECRYPT</button>
+</td></tr><tr>
+</tr></tbody></table> 
+</div>
+
+ <!--  
+ <div  class="well">
+<center>UTF8 TO UNICODE CONVERTER</center>
+<table>
+<tr><td>UTF8 text. to convert</td><td class="span8"><textarea id="pvalue"  rows="4" class="span8">insert the text to convert</textarea></td><tr>
+<tr><td>Result(unicode text.):</td><td class="span8"><textarea id="resvalue"  rows="4" class="span8"></textarea>
+<input  class="btn"  type="button" value="Execute!" onClick="utf8_to_unicode('pvalue','resvalue')" ></td><tr>
+
+</table> 
+</div>
+-->
+
+
+
+
+
+</div>
+
+</div>
+</div> 
+
+
+<script src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/jquery.js"></script>
+<script src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/widgets.js"></script>
+<script src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/prettify.js"></script>
+<script src="./Crypt and Decrypt online tool conversion   MD5,AES,HMAC,SHA1,SHA256,DES,TRIPLEDES,RABBIT_files/bootstrap.min.js"></script>
+
+ 
+
+ 
+ 
+ </body></html>
